@@ -293,7 +293,7 @@ extension UIView {
     Reset.resetCssView(self)
   }
 
-  func prepareForComponentReuse() {
+  @objc func prepareForComponentReuse() {
     Reset.resetView(self)
   }
 }

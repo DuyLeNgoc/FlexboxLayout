@@ -416,178 +416,178 @@ extension Overflow: CEnumTransformable {
 
 public extension UIView {
 
-  public dynamic var useFlexbox: Bool {
+  @objc public dynamic var useFlexbox: Bool {
     get { return css_usesFlexbox }
     set { css_usesFlexbox = newValue }
   }
 
-  public dynamic var layout_direction: Direction {
+  @objc public dynamic var layout_direction: Direction {
     get { return Direction.fromCEnum(cEnum: self.css_direction) }
     set { self.css_direction = newValue.toCEnum() }
   }
 
-  public dynamic var layout_flexDirection: FlexDirection {
+  @objc public dynamic var layout_flexDirection: FlexDirection {
     get { return FlexDirection.fromCEnum(cEnum: self.css_flexDirection) }
     set { self.css_flexDirection = newValue.toCEnum() }
   }
 
-  public dynamic var layout_justifyContent: Justify {
+  @objc public dynamic var layout_justifyContent: Justify {
     get { return Justify.fromCEnum(cEnum: self.css_justifyContent) }
     set { self.css_justifyContent = newValue.toCEnum() }
   }
 
-  public dynamic var layout_alignContent: Align {
+  @objc public dynamic var layout_alignContent: Align {
     get { return Align.fromCEnum(cEnum: self.css_alignContent) }
     set { self.css_alignContent = newValue.toCEnum() }
   }
 
-  public dynamic var layout_alignItems: Align {
+  @objc public dynamic var layout_alignItems: Align {
     get { return Align.fromCEnum(cEnum: self.css_alignItems) }
     set { self.css_alignItems = newValue.toCEnum() }
   }
 
-  public dynamic var layout_alignSelf: Align {
+  @objc public dynamic var layout_alignSelf: Align {
     get { return Align.fromCEnum(cEnum: self.css_alignSelf) }
     set { self.css_alignSelf = newValue.toCEnum() }
   }
 
-  public dynamic var layout_positionType: PositionType {
+  @objc public dynamic var layout_positionType: PositionType {
     get { return PositionType.fromCEnum(cEnum: self.css_positionType) }
     set { self.css_positionType = newValue.toCEnum() }
   }
 
-  public dynamic var layout_wrapType: WrapType {
+  @objc public dynamic var layout_wrapType: WrapType {
     get { return WrapType.fromCEnum(cEnum: self.css_flexWrap) }
     set { self.css_flexWrap = newValue.toCEnum() }
   }
 
-  public dynamic var layout_flexGrow: CGFloat {
+  @objc public dynamic var layout_flexGrow: CGFloat {
     get { return self.css_flexGrow }
     set { self.css_flexGrow = newValue }
   }
 
-  public dynamic var layout_flexShrink: CGFloat {
+  @objc public dynamic var layout_flexShrink: CGFloat {
     get { return self.css_flexShrink }
     set { self.css_flexShrink = newValue }
   }
 
-  public dynamic var layout_flexBasis: CGFloat {
+  @objc public dynamic var layout_flexBasis: CGFloat {
     get { return self.css_flexBasis }
     set { self.css_flexBasis = newValue }
   }
 
-  public dynamic var layout_width: CGFloat {
+  @objc public dynamic var layout_width: CGFloat {
     get { return self.css_width }
     set { self.css_width = newValue }
   }
 
-  public dynamic var layout_height: CGFloat {
+  @objc public dynamic var layout_height: CGFloat {
     get { return self.css_height }
     set { self.css_height = newValue }
   }
 
-  public dynamic var layout_minWidth: CGFloat {
+  @objc public dynamic var layout_minWidth: CGFloat {
     get { return self.css_minWidth }
     set { self.css_minWidth = newValue }
   }
 
-  public dynamic var layout_minHeight: CGFloat {
+  @objc public dynamic var layout_minHeight: CGFloat {
     get { return self.css_minHeight }
     set { self.css_minHeight = newValue }
   }
 
-  public dynamic var layout_maxWidth: CGFloat {
+  @objc public dynamic var layout_maxWidth: CGFloat {
     get { return self.css_maxWidth }
     set { self.css_maxWidth = newValue }
   }
 
-  public dynamic var layout_maxHeight: CGFloat {
+  @objc public dynamic var layout_maxHeight: CGFloat {
     get { return self.css_maxHeight }
     set { self.css_maxHeight = newValue }
   }
 
-  public dynamic var layout_positionTop: CGFloat {
+  @objc public dynamic var layout_positionTop: CGFloat {
     get { return css_position(for: CSSEdgeTop) }
     set { css_setPosition(newValue, for: CSSEdgeTop) }
   }
 
-  public dynamic var layout_positionLeft: CGFloat {
+  @objc public dynamic var layout_positionLeft: CGFloat {
     get { return css_position(for: CSSEdgeLeft) }
     set { css_setPosition(newValue, for: CSSEdgeLeft) }
   }
 
-  public dynamic var layout_positionRight: CGFloat {
+  @objc public dynamic var layout_positionRight: CGFloat {
     get { return css_position(for: CSSEdgeRight) }
     set { css_setPosition(newValue, for: CSSEdgeRight) }
   }
 
-  public dynamic var layout_positionBottom: CGFloat {
+  @objc public dynamic var layout_positionBottom: CGFloat {
     get { return css_position(for: CSSEdgeBottom) }
     set { css_setPosition(newValue, for: CSSEdgeBottom) }
   }
 
-  public dynamic var layout_marginAll: CGFloat {
+  @objc public dynamic var layout_marginAll: CGFloat {
     get { return css_margin(for: CSSEdgeAll) }
     set { css_setMargin(newValue, for: CSSEdgeAll) }
   }
 
-  public dynamic var layout_marginTop: CGFloat {
+  @objc public dynamic var layout_marginTop: CGFloat {
     get { return css_margin(for: CSSEdgeTop) }
     set { css_setMargin(newValue, for: CSSEdgeTop) }
   }
 
-  public dynamic var layout_marginLeft: CGFloat {
+  @objc public dynamic var layout_marginLeft: CGFloat {
     get { return css_margin(for: CSSEdgeLeft) }
     set { css_setMargin(newValue, for: CSSEdgeLeft) }
   }
 
-  public dynamic var layout_marginRight: CGFloat {
+  @objc public dynamic var layout_marginRight: CGFloat {
     get { return css_margin(for: CSSEdgeRight) }
     set { css_setMargin(newValue, for: CSSEdgeRight) }
   }
 
-  public dynamic var layout_marginBottom: CGFloat {
+  @objc public dynamic var layout_marginBottom: CGFloat {
     get { return css_margin(for: CSSEdgeBottom) }
     set { css_setMargin(newValue, for: CSSEdgeBottom) }
   }
 
-  public dynamic var layout_paddingAll: CGFloat {
+  @objc public dynamic var layout_paddingAll: CGFloat {
     get { return css_padding(for: CSSEdgeAll) }
     set { css_setPadding(newValue, for: CSSEdgeAll) }
   }
 
-  public dynamic var layout_paddingTop: CGFloat {
+  @objc public dynamic var layout_paddingTop: CGFloat {
     get { return css_padding(for: CSSEdgeTop) }
     set { css_setPadding(newValue, for: CSSEdgeTop) }
   }
 
-  public dynamic var layout_paddingLeft: CGFloat {
+  @objc public dynamic var layout_paddingLeft: CGFloat {
     get { return css_padding(for: CSSEdgeLeft) }
     set { css_setPadding(newValue, for: CSSEdgeLeft) }
   }
 
-  public dynamic var layout_paddingRight: CGFloat {
+  @objc public dynamic var layout_paddingRight: CGFloat {
     get { return css_padding(for: CSSEdgeRight) }
     set { css_setPadding(newValue, for: CSSEdgeRight) }
   }
 
-  public dynamic var layout_paddingBottom: CGFloat {
+  @objc public dynamic var layout_paddingBottom: CGFloat {
     get { return css_padding(for: CSSEdgeBottom) }
     set { css_setPadding(newValue, for: CSSEdgeBottom) }
   }
 
   /** Restore the node flex properties. */
-  public dynamic func layout_reset() {
+  @objc public dynamic func layout_reset() {
     self.css_reset()
   }
 
   /** Compute and apply the flexbox layout. */
-  public dynamic func layout_apply() {
+  @objc public dynamic func layout_apply() {
     self.css_applyLayout()
   }
 
   /** Asks the view to calculate and return the size that best fits the specified size. */
-  public dynamic func layout_sizeThatFits(constrainedSize: CGSize) -> CGSize {
+  @objc public dynamic func layout_sizeThatFits(constrainedSize: CGSize) -> CGSize {
     return css_sizeThatFits(constrainedSize)
   }
 }

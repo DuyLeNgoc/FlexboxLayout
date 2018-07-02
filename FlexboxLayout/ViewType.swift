@@ -118,8 +118,8 @@ class InternalViewStore {
   }
 
   /// The configuration closure for this view.
-  private var _closure: ((Void) -> (Void))?
-  var configureClosure: ((Void) -> (Void))? {
+  private var _closure: (() -> (Void))?
+  var configureClosure: (() -> (Void))? {
     set {
       _closure = {
         newValue?()
